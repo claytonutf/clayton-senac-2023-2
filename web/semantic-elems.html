@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="author" content="Clayton Kossoski - SENAC PG - 2023-2">
+  <meta name="description" content="Form HTML5 example">
+  <meta name="keywords" content="HTML5">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tags semânticas do HTML 5</title>
+</head>
+<body>
+    <h1>O que é tag semântica?</h1>
+    <p>
+        Uma tag semântica tem um significado explicitamente definido tanto para o navegador (e outros sistemas) quanto para o desenvolvedor
+    </p>
+    <p>
+        Exemplos de tags semânticas:
+    </p>
+    <ul>
+        <li>header, main, aside, article, footer</li>
+        <li>H1..H6</li>
+        <li>p</li>
+        <li>img</li>
+        <li>ul, ol</li>
+        <li>a</li>
+        <li>form</li>
+        <li>input</li>
+        <li>
+            <label for="file">Progress bar:</label>
+            <progress id="file" value="32" max="100"> 32% </progress>
+        </li>
+    </ul>
+
+    <h1>O elemento picture</h1>
+    <picture>
+        <source media="(max-width:699px)" width="90%" srcset="images/semantic-tags-small.gif">
+        <source media="(min-width:700px)" width="90%" srcset="images/semantic-tags.jpg">
+        <img src="images/semantic-tags.jpg" width="50%" alt="Comparativo entre o uso de tags não semânticas para definição de conteúdo antigamente e a abordagem atual que usa tags específicas para cada tipo de conteúdo de um website.">
+    </picture>
+
+    <h1>O elemento video</h1>
+    <video width="90%" controls>
+        <source src="videos/movie.mp4" type="video/mp4">
+        <source src="videos/movie.ogg" type="video/ogg">
+        Este browser não suporta a tag video!
+    </video>
+
+    <h1>O elemento audio</h1>
+    <audio controls>
+        <source src="audios/horse.ogv" type="audio/ogg">
+        <source src="audios/horse.mp3" type="audio/mpeg">
+        Este browser não suporta a tag audio!
+    </audio>
+
+    <hr>
+
+    <h1>O que é tag não semântica?</h1>
+    <p>
+        Uma tag não semântica não tem um significado semântico específico, portanto, o conteúdo textual nelas armazenado não passa de "caracteres dispersos".
+    </p>
+    <p>
+        Tags não semânticas são mais apropriadas para o trabalho com layout e não com texto diretamente.
+    </p>
+    <p>
+        Exemplos de tags não semânticas:
+    </p>
+    <ul>
+        <li>div</li>
+        <li>span</li>
+        <li>hr</li>
+        <li>strong, b, i, em (polêmica!)</li>
+    </ul>
+
+    <hr>
+
+    <h1>NAV</h1>
+    <nav>
+        <p>A tag &lt;nav&gt; deve conter um conjunto de links de navegação.</p>
+        <p>Observe que nem todos os links de um documento devem estar contidos na tag nav.</p>
+        <p>Os leitores de tela podem utilizar esta tag para auxiliar a navegação da página web.</p>           
+        <a href="https://www.pr.senac.br/trabalhe_conosco/">Senac</a> |
+        <a href="https://g1.globo.com/">G1</a> |
+        <a href="https://www.pciconcursos.com.br/">PCI Concursos</a> |
+    </nav>
+
+    <h1>HEADER</h1>
+    <header>
+        <p>A tag header representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.</p>
+        <p>Esta tag normalmente pode conter:</p>
+        <ul>
+            <li>Uma ou mais tags de cabeçalho (h1-h6)</li>
+            <li>Logotipo ou ícone</li>
+            <li>Informações de autoria</li>  
+        </ul>
+        <em>Nota: Você pode ter vários tags header em um documento HTML. No entanto, header não pode ser utilizado dentro de um footer, address ou outro tag header.</em>
+    </header>
+
+    <h1>ASIDE</h1>
+    <aside>
+        <p>
+            O tag aside define conteúdo adicional e indiretamente relacionado ao conteúdo principal (como sites parceiros e propagandas).
+        </p>
+    </aside>
+
+    <H1>SECTION</H1>
+    <section>
+        <P>O tag section define uma seção em um documento.</P>
+        <p>De acordo com a documentação HTML do W3C: "Uma seção é um agrupamento temático de conteúdo, geralmente com um cabeçalho."</p>
+        <p>Exemplos de usos:</p>
+        <ul>
+            <li>Capítulos</li>
+            <li>Introdução</li>
+            <li>Novos itens</li>
+            <li>Informações de contato</li>
+        </ul>
+    </section>
+
+    <h1>ARTICLE</h1> 
+    <article>
+        <p>A tag article especifica conteúdo independente, importânte, e atômico.</p>
+        <p>O "artigo" deve fazer sentido por si só e deve ser possível distribuí-lo independentemente do restante do site.</p>
+        <p>Exemplos de onde o tag article pode ser usado:</p>
+        <ul>
+            <li>Produto específico</li>
+            <li>Postagens de fórum</li>
+            <li>Postagens de blog</li>
+            <li>Comentários de usuário</li>
+            <li>Artigos de jornal</li>
+        </ul>
+    </article>
+
+    <h1>MAIN</h1>
+    <main>
+        <p>A tag main especifica o conteúdo principal de um documento.</p>
+        <p>O conteúdo dentro do elemento principal deve ser exclusivo do documento. Ele não deve conter nenhum conteúdo repetido em documentos, como barras laterais, links de navegação, informações de direitos autorais, logotipos de sites e formulários de pesquisa.</p>
+        <p>Nota: Não deve haver mais de um elemento principal em um documento. O elemento principal NÃO deve ser descendente de um article, aside, footer, header ou nav.</p>
+    </main>
+
+    <H1>FOOTER</H1>
+    <footer>
+        <p>A tag footer define um rodapé para um documento ou seção.</p>
+        <p>É possível ter várias tags footer em um documento.</p>
+        <p>Normalmente contém:</p>
+        <ul>
+            <li>Informações de autoria e contato</li>
+            <li>Informações sobre direitos autorais</li>
+            <li>Mapa do site</li>
+            <li>Voltar aos links principais</li>
+            <li>Documentos relacionados</li>
+        </ul>    
+
+        <address>
+            Escrito por <a href="mailto:clayton.kossoski@docente.pr.senac.br">Clayton K.</a>.<br>
+            Visite-nos:<br>
+            Faculdade de Tecnologia SENAC Ponta Grossa<br>
+            Av. João Manoel dos Santos Ribas, 313 - Nova Rússia, Ponta Grossa - PR<br>
+            84051-410
+        </address>
+    </footer>
+
+</body>
+</html>
