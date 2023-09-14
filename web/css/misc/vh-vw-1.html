@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport example</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        #div1{
+            background-color: green;
+            height: 100vh;
+            /* z-index: 1; */
+        }
+        #div2{
+            background-color: yellow;
+            height: 100vh;
+            /* z-index: 1; */
+        }
+        #div3{
+            background-color: blue;
+            height: 100vh;
+            /* z-index: 1; */
+        }
+    </style>
+</head>
+<body>
+    <a href="#div1">1</a>
+    <a href="#div2">2</a>
+    <a href="#div3">3</a>
+    <br>
+    <div class="container">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </div>
+</body>
+</html>

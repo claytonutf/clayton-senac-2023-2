@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport exemplo</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            scroll-behavior: smooth;
+        }
+        #div1{
+            background-color: green;
+            height: 20vh;
+            width: 20vw;
+        }
+        #div2{
+            background-color: yellow;
+            height: 20vh;
+            width: 20vw;
+            margin: 0 auto;
+        }
+        #div3{
+            background-color: blue;
+            height: 20vh;
+            width: 20vw;
+            position: absolute;
+            top: 20px;  
+            right: 0px;
+            
+        }
+        #container{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border: 2px rgb(187, 49, 49) dashed;
+        }
+    </style>
+</head>
+<body>
+    <a href="#div1">Link 1</a>
+    <a href="#div2">Link 2</a>
+    <a href="#div3">Link 3</a>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    
+    <div id="container">
+        <div id="div3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatibus blanditiis in, tempora tempore ullam dolorum enim, maxime voluptatum dolorem iusto consequatur quaerat exercitationem minus sit tenetur quia. A, harum.
+        </div>
+    </div>
+
+</body>
+</html>
