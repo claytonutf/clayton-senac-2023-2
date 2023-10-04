@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:25px;}
+
+div.polaroid {
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+div.container-card {
+    text-align: center;
+    padding: 5px 5px;
+  
+}
+
+main.container-cards{
+  
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.img-card{
+    width:100%;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Cards</h2>
+
+<main class="container-cards">
+
+<div class="polaroid">
+  <img src="images/litoral.jpg" class="img-card">
+  <div class="container-card">
+  <p>Litoral</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="images/aurora.jpg" class="img-card">
+  <div class="container-card">
+  <p>Aurora</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="images/balneario.jpg" class="img-card">
+  <div class="container-card">
+  <p>Balneário</p>
+  </div>
+</div>
+
+</main>
+
+</body>
+</html>
+<!--
+    https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-shadow
+-->

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="author" content="Clayton Kossoski - SENAC PG - 2023-2">
+  <meta name="description" content="Exemplo flex e cards">
+  <meta name="keywords" content="CSS3">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo flex e cards</title>
+<style>
+body {
+  margin: 25px;
+}
+
+.container-cards {
+    width: 30%;
+    background-color: white;
+    margin-bottom: 25px;
+
+    /* offset-x | offset-y | color */
+    box-shadow: 10px 10px lightgray;
+
+    /* offset-x | offset-y | blur-radius | color */
+    /* box-shadow: 10px 5px 5px black; */
+
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2); */
+
+    /* inset | offset-x | offset-y | color */
+    /* box-shadow: inset 1em 10em gold; */
+
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+.card-description {
+  text-align: center;
+  padding: 5px 5px;
+  
+}
+
+.img-card{
+    width:100%;
+}
+
+.container-flex{
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+</style>
+</head>
+<body>
+
+<h2>Cards</h2>
+
+<section class="container-flex">
+
+  <div class="container-cards">
+    <img src="images/litoral.jpg" class="img-card">
+    <div class="card-description">
+    <p>Litoral</p>
+    </div>
+  </div>
+
+  <div class="container-cards">
+    <img src="images/aurora.jpg" class="img-card">
+    <div class="card-description">
+    <p>Aurora</p>
+    </div>
+  </div>
+
+  <div class="container-cards">
+    <img src="images/balneario.jpg" class="img-card">
+    <div class="card-description">
+    <p>Balneário</p>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
+<!--
+    https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-shadow
+-->
