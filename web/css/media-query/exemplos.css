@@ -1,0 +1,49 @@
+
+@media print {
+    /* Esta regra aplica estilos para a saída de impressão (ex: papel ou PDF) */
+}
+
+@media screen, print {
+    /* Esta regra aplica os estilos tanto para saída padrão (tela) quando para a saída de impressão */
+}
+
+@media all {
+    /* Esta regra aplica estilos para todos os dispositivos de saída */
+}
+
+
+
+@media (hover: hover) {
+    /* Esta regra aplica estilos quando o cursor do mouse passa sobre os elementos HTML. */
+}
+
+@media (max-width: 1250px) {
+    /* Esta regra aplica estilos apenas se a largura do viewport for igual ou inferior a 1250px */
+}
+
+@media (color) {
+    /* Esta regra aplica estilos para todos os dispositivos que tenham suporte ao modo colorido. */
+}
+
+
+
+@media (min-width: 30rem) and (orientation: landscape) {
+    /* Esta regra aplica estilos se a largura mínima da viewport é 30rem e a orientação é paisagem */
+}
+
+@media screen and (min-width: 51rem) and (orientation: portrait) {
+    /* Esta regra aplica estilos a dispositivos com tela contendo largura mínima de 51rem e orientação retrato. */
+}
+
+@media not all and (monochrome) {
+    /* Esta regra aplica estilos a saídas que não são do media type all e que não são monocromáticos */
+}
+
+
+@media (not (color)) or (hover) {
+    /* Esta regra aplica estilos se a tela é monocromática OU se suporta o recurso hover. */
+}
+
+@media only screen and (color) {
+    /* A palavra-chave "only" impede que navegadores antigos (que não suportam media query) apliquem os estilos especificados esta regra. */
+}
