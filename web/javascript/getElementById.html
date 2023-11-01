@@ -1,0 +1,20 @@
+<!--
+    https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById    
+--> 
+<html lang="en">
+  <head>
+    <title>getElementById example</title>
+  </head>
+  <body>
+    <p id="textolorem">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <button onclick="mudarCor('blue');">Azul</button>
+    <button onclick="mudarCor('red');">Vermelho</button>
+
+    <script>
+        function mudarCor(novaCor) {
+            const elem = document.getElementById("textolorem");
+            elem.style.color = novaCor;
+        }
+    </script>
+  </body>
+</html>

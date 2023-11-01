@@ -1,0 +1,44 @@
+<!--
+    https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<h1>Document Object</h1>
+
+<h2>O método getElementsByClassName()</h2>
+
+<p>Mudar a cor de background de todos elementos com class="example"</p>
+
+<div class="example">
+    Uma div com class="example"
+</div>
+<br>
+<div class="example">
+    Outra div com class="example"
+</div>
+
+<p class="example">
+    Um element p com class="example"
+</p>
+
+<p>Um <span class="example">span</span> com class="example"</p>
+
+<script>
+    const collection = document.getElementsByClassName("example");
+    console.log(collection);
+    for (let i = 0; i < collection.length; i++) {
+        collection[i].style.backgroundColor = "red";
+    }
+</script>
+
+</body>
+</html>
+
