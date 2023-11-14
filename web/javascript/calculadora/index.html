@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tela{
+            border: 1px black solid;
+            font-size: large;
+            width: 90%;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        button{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="tela">Resultado</h1>
+        <button onclick="capturarOperando(1)">1</button>
+        <button onclick="capturarOperando(2)">2</button>
+        <button onclick="capturarOperador('soma')">+</button>
+        <button onclick="calcularResultado()">=</button>
+    </main>
+    <script>
+        let operando1;
+        let operando2;
+        let operador;
+        let resultado;
+
+        function capturarOperador(op){
+            console.log(op);
+            operador=op;
+            console.log(operador);
+        }
+
+        function capturarOperando(operando){
+            console.log(operando);
+            //let tela=document.getElementById("tela");
+            document.getElementById('tela').innerHTML = operando;
+            if(operando1==undefined){
+                operando1=operando;
+            }else{
+                if(operando2==undefined){
+                    operando2=operando;
+                }
+            }
+        }
+
+        function calcularResultado(){
+            resultado = operando1+operando2;
+            console.log(resultado);
+
+        }
+    </script>
+</body>
+</html>
