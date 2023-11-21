@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de biblioteca</title>
+</head>
+<body>
+    
+    <script>
+        /*CRUD de livros*/
+        function cadastrarLivro(){
+
+            const livro = { titulo: "1984", autor: "", genero: "", edicao:"", isbn: "", ano: "" };
+            livro.titulo="1988";
+            livro.titulo=parseInt(livro.titulo);
+            let teste=livro.titulo+35;
+            console.log(teste);
+            console.log(livro);
+            
+            //criação de um array livros
+            let livros=[];
+
+            livros.push(livro);
+            console.log(livros);
+            
+        }
+        cadastrarLivro();
+
+        function editarLivro(id){
+
+        }
+        function listarLivro(id){
+
+        }
+        function deletarLivro(id){
+
+        }
+    </script>
+</body>
+</html>
