@@ -8,24 +8,36 @@
 <body>
     
     <script>
+        let livros=[];
         /*CRUD de livros*/
-        function cadastrarLivro(){
+        function cadastrarLivro(_titulo, _autor, _genero, _edicao, _isbn, _ano){
 
-            const livro = { titulo: "1984", autor: "", genero: "", edicao:"", isbn: "", ano: "" };
-            livro.titulo="1988";
-            livro.titulo=parseInt(livro.titulo);
-            let teste=livro.titulo+35;
-            console.log(teste);
+            const livro = {titulo: _titulo, autor: _autor, genero: _genero, edicao: _edicao, isbn: _isbn, ano: _ano};
             console.log(livro);
-            
-            //criação de um array livros
-            let livros=[];
-
             livros.push(livro);
             console.log(livros);
+            // const livro = { titulo: "1984", autor: "", genero: "", edicao:"", isbn: "", ano: "" };
+            // livro.titulo="1988";
+            // livro.titulo=parseInt(livro.titulo);
+            // let teste=livro.titulo+35;
+            // console.log("conteúdo variável teste: "+teste);
+            // console.log("conteúdo do objeto livro");
+            // console.log(livro);
+            
+            // //criação de um array livros
+            // let livros=[];
+            // livros.push(livro);
+            // console.log(livros);
+
+            // const livro2 = { titulo: "O Segredo"};
+            // livros.push(livro2);
+            // console.log("livros com o segundo objeto");
+            // console.log(livros);
             
         }
-        cadastrarLivro();
+
+        cadastrarLivro("Sacrilégio", "Xeng", "XYZ", 3, 55555, 2022);
+        cadastrarLivro("O Iluminado", "Stephen", "terror", 2, 909090, 1994);
 
         function editarLivro(id){
 
