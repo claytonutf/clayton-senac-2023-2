@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="mostrarNotificacao()">Ver notificação!</button>
+    <script>
+        function mostrarNotificacao(){
+            if(window.Notification && Notification.permission !== "denied") {
+	            Notification.requestPermission(function(status) {  // status is "granted", if accepted by user
+                var n = new Notification('Title', { 
+                    body: 'Olá! Eu sou um texto de notificação!',
+                    icon: 'images/logo.png' // optional
+                    }); 
+	            });
+            }
+        }
+
+    </script>
+</body>
+</html>
+<!--
+    https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API
+    https://www.braziljs.org/p/web-notification-api
+-->

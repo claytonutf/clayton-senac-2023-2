@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    <button onclick="criarCookie()">Criar cookie</button>
+    <button onclick="mostrarCookies()">Mostrar cookies</button>
+    <button onclick="deletarCookies()">Deletar cookies</button>
+    <script>
+        function criarCookie(){
+            document.cookie = "username=fulano";
+            document.cookie = "username=fulano; expires=Fri, 15 Dec 2023 12:00:00 UTC";
+
+        }
+        function mostrarCookies(){
+            alert(document.cookie);
+        }
+        function deletarCookies(){
+            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+    </script>
+</body>
+</html>
+<!--
+    https://www.w3schools.com/js/js_cookies.asp
+-->

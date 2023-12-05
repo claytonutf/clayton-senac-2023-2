@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML Geolocalização</h1>
+<p>Clique no botão para conhecer as suas coordenadas geográficas.</p>
+
+<button onclick="getLocalizacao()">Clique aqui!</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocalizacao() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(mostrarCoordenadas);
+  } else { 
+    x.innerHTML = "Geolocalização é suportada neste navegador.";
+  }
+}
+
+function mostrarCoordenadas(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
+<!--
+    https://www.w3schools.com/jsref/api_geolocation.asp
+-->
